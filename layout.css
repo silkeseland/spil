@@ -1,0 +1,73 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (orientation: portrait) {
+  body {
+    background-position: 60% 0%;
+  }
+}
+@media (min-width: 600px) {
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .grid_1-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+header ul {
+  /*Kode som flexer indholdet: display, align-items, justify-content*/
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  /* Kode der fjerner bulletpoints: list-style */
+  list-style: none;
+
+  /* Kode der fjerner browserens default margin og padding */
+  margin: 0px;
+  padding: 0px;
+}
+
+header li {
+  /* Her skal du give listepunkterne en bredde og en margin: width, margin */
+  min-width: 100px;
+  margin: 20px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1000px) {
+  header ul {
+    justify-content: center;
+  }
+}

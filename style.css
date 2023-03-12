@@ -1,0 +1,390 @@
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(Forside1.svg);
+  background-size: cover;
+}
+
+#start_knap {
+  position: absolute;
+  top: 62%;
+  left: 53%;
+  aspect-ratio: 221.5/146.69;
+  width: 19%;
+  background-image: url(play.svg);
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+@keyframes puls_kf {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#how_play {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(howtoplay.svg);
+  background-size: cover;
+}
+
+#start_knap1 {
+  position: absolute;
+  top: 77%;
+  left: 44%;
+  aspect-ratio: 222.1/137.48;
+  width: 11%;
+  background-image: url(play1.svg);
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+@keyframes puls_kf {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(Game\ over.svg);
+  background-size: cover;
+}
+
+#try_again {
+  position: absolute;
+  top: 70%;
+  left: 11%;
+  aspect-ratio: 405.4/168.3;
+  width: 23%;
+  background-image: url(try\ again-1.svg);
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+@keyframes puls_kf {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(Victory.svg);
+  background-size: cover;
+}
+
+#try_again1 {
+  position: absolute;
+  top: 70%;
+  left: 11%;
+  aspect-ratio: 405.4/168.3;
+  width: 23%;
+  background-image: url(try\ again-1.svg);
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+@keyframes puls_kf {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(spilbagrund.svg);
+  background-size: cover;
+}
+#game_foreground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url();
+  background-size: cover;
+  pointer-events: none;
+}
+
+/** game elements **/
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#figur_container1,
+#figur_container12 {
+  width: 26%;
+  aspect-ratio: 1.5/1;
+  position: absolute;
+}
+#figur_sprite1,
+#figur_sprite12 {
+  width: 100%;
+  height: 100%;
+  background-image: url(jailbird.svg);
+  background-size: cover;
+}
+#figur_container2,
+#figur_container22 {
+  width: 26%;
+  aspect-ratio: 1.5/1;
+  position: absolute;
+}
+#figur_sprite2,
+#figur_sprite22 {
+  width: 100%;
+  height: 100%;
+  background-image: url(businessman.svg);
+  background-size: cover;
+}
+#figur_container3 {
+  width: 26%;
+  aspect-ratio: 1.5/1;
+  position: absolute;
+}
+
+#figur_sprite3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(dame.svg);
+  background-size: cover;
+}
+
+/* Game UI */
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 52vw;
+  left: 89vw;
+  pointer-events: none;
+}
+
+#score_board {
+  position: absolute;
+  bottom: 95%;
+  right: 187%;
+  font-size: 300%;
+  font-family: monospace;
+}
+
+#score {
+  font-size: 2em;
+}
+
+#liv img {
+  width: 3%;
+}
+
+.hide {
+  display: none;
+}
+
+.gray {
+  filter: grayscale(1);
+}
+
+#time_container {
+  position: absolute;
+  width: 3%;
+  height: 30%;
+  top: -90%;
+  right: 91%;
+  aspect-ratio: 6/30;
+  border: 2px solid black;
+  background-color: rgb(200, 200, 200);
+}
+
+#time_sprite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center bottom;
+  background-color: limegreen;
+  transform-origin: center bottom;
+}
+
+.tid {
+  animation-name: tid_kf;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes tid_kf {
+  0% {
+    transform: scaleY(1);
+    background-color: limegreen;
+  }
+  50% {
+    transform: scaleY(0.5);
+    background-color: orange;
+  }
+
+  100% {
+    transform: scaleY(0);
+    background-color: red;
+  }
+}
+
+/* positioner */
+.pos1 {
+  top: 40%;
+  left: -20%;
+}
+
+.pos2 {
+  top: 50%;
+  left: -20%;
+}
+
+.pos3 {
+  top: 60%;
+  left: -20%;
+}
+
+.pos4 {
+  top: 70%;
+  left: -20%;
+}
+
+/* Animation 1 */
+.move_right {
+  animation-name: move_right_kf;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move_right_kf {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(400%);
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  transform: rotate(0deg) scale(3);
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* delay */
+.delay1 {
+  animation-delay: 0s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+.delay3 {
+  animation-delay: 2s;
+}
+
+/* speed */
+.speed1 {
+  animation-duration: 3s;
+}
+
+.speed2 {
+  animation-duration: 4s;
+}
+
+.speed3 {
+  animation-duration: 5s;
+}

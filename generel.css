@@ -1,0 +1,67 @@
+/*reset */
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+/* typografi */
+h1 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5rem;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  margin-top: 40px;
+}
+h2 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+}
+h3 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+}
+p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.2rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+header a {
+  /* Kode der gør det muligt at give boksene en størrelse (De skal være block-elementer for at kunne angive en width) */
+  display: inline-block;
+
+  /*Styling af bokse: width, padding, border-radius, text-align*/
+  min-width: 190px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+
+  /*Styling af link tekst: color, background-color, font-family, font-size, font-weight, text-decoration*/
+  color: white;
+  background-color: rgb(69, 79, 53);
+  font-family: "arial";
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header a:hover {
+  /*Styling af hover-tilstanden: background-color, color*/
+  color: red;
+  background-color: white;
+}
